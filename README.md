@@ -1,5 +1,3 @@
-
-
 # shell
 
 常用脚本命令
@@ -118,6 +116,20 @@ bash <(curl -Ls https://raw.githubusercontent.com/missuo/OpenAI-Checker/main/ope
 ```
 
 ## 服务器软件
+
+#### 安装 wget
+CentOS
+
+```bash
+yum install wget -y
+```
+
+Ubuntu / Debian
+
+```bash
+apt-get install wget -y
+```
+
 
 #### Aria2一键安装脚本
 
