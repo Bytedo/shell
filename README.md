@@ -82,6 +82,25 @@ bash <(curl -Lso- https://git.io/superspeed_uxh)
 bash <(curl -Lso- https://dl.233.mba/d/sh/speedtest.sh)
 bash <(curl -Lso- https://git.io/J1SEh)
 ```
+#### Speedtest
+Debian/Ubuntu 导入 GPG Key 并添加源
+
+```bash
+apt install -y lsb-release ca-certificates apt-transport-https curl gnupg dpkg
+curl -sSL https://packagecloud.io/ookla/speedtest-cli/gpgkey | gpg --dearmor > /usr/share/keyrings/speedtest.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/speedtest.gpg] https://packagecloud.io/ookla/speedtest-cli/debian/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/speedtest.list
+
+```
+安装使用speedtest
+
+```bash
+apt update
+apt install speedtest -y
+speedtest -h #查看高级用法
+speedtest -i ip #指定出口ip
+speedtest -L #查看附近的测速节点列表
+
+```
 
 #### 检测服务器内存
 
