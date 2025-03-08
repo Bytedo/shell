@@ -134,7 +134,7 @@ gcc -l stdc++ memtester.cpp
 bash <(curl -Ls https://raw.githubusercontent.com/missuo/OpenAI-Checker/main/openai.sh)
 ```
 
-## 服务器软件
+## 服务器程序相关
 
 #### 安装 wget
 CentOS
@@ -205,3 +205,12 @@ bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/insta
 ```bash
 wget -O box.sh https://raw.githubusercontent.com/BlueSkyXN/SKY-BOX/main/box.sh && chmod +x box.sh && clear && ./box.sh
 ```
+
+#### 一键安装 Pyenv 设置镜像
+
+适用于 debain/Ubuntu 优化国内机器安装部署网络
+
+```bash
+curl -O https://raw.githubusercontent.com/Bytedo/shell/refs/heads/main/install_pyenv_cn.sh && chmod +x install_pyenv_cn.sh && ./install_pyenv_cn.sh
+```
+
